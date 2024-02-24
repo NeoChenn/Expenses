@@ -1,0 +1,134 @@
+:root{
+    --Soft-red: hsl(10, 79%, 65%);
+    --Cyan: hsl(186, 34%, 60%);
+    --Dark-brown: hsl(25, 47%, 15%);
+    --Medium-brown: hsl(28, 10%, 53%);
+    --Cream: hsl(27, 66%, 92%);
+    --Very-pale-orange: hsl(33, 100%, 98%);
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Cream);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.balance{
+    display: flex;
+    background-color: var(--Soft-red);
+    justify-content: space-between;
+    padding: 0.5rem 2rem;
+    border-radius: 1rem;
+}
+
+.balanceText{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+}
+
+.balanceText p{
+    margin-bottom: -1rem;
+}
+
+.spending{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 1rem;
+    padding: 0.5rem 2rem;
+}
+
+.spending h2{
+    color: var(--Dark-brown);
+}
+
+.data{
+    display: flex;
+}
+
+.dataIndividual{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+
+}
+
+.dataIndividual p{
+    color: var(--Medium-brown);
+}
+
+.dataIndividual h4{
+    color: white;
+    background-color: var(--Dark-brown);
+    border-radius: 3px;
+    padding: 5px;
+    margin-top: -0.5rem;
+    visibility: hidden;
+}
+
+.dataGraph{
+    margin-bottom: -8px;
+    margin-top: -1rem;
+    background-color: var(--Soft-red);
+    height: 100px;
+    width: 2.5rem;
+    border-radius: 5px;
+}
+
+.dataGraph:hover{
+    cursor: pointer;
+    background-color: hsl(10, 79%, 70%);
+}
+
+.today{
+    background-color: var(--Cyan);
+}
+
+.today:hover{
+    background-color: hsl(186, 34%, 70%);
+}
+
+.separation{
+    height: 1px;
+    background-color: var(--Medium-brown);
+    margin: 0.5rem 0rem;
+}
+
+.totalSpent{
+    display: flex;
+    justify-content: space-between;
+}
+
+.thisMonth{
+    display: flex;
+    flex-direction: column;
+}
+
+.thisMonth p{
+    color: var(--Medium-brown);
+    margin-bottom: -1.2rem;
+}
+
+.lastMonth{
+    display: flex;
+    flex-direction: column;
+}
+
+.lastMonth h5{
+    margin-bottom: -1rem;
+    margin-top: 2.3rem;
+}
+
+.lastMonth p{
+    color: var(--Medium-brown);
+}

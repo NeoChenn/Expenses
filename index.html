@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Expenses chart component</title>
+
+</head>
+<body>
+  <div class="container">
+    <div class="balance">
+      <div class="balanceText">
+        <p>My balance</p>
+        <h2>$921.48</h2>
+      </div>
+      <img src="images/logo.svg">
+    </div>
+
+    <div class="spending">
+      <h2>Spending - Last 7 days</h2>
+      <div class="data">
+        <div class="dataIndividual">
+          <p>mon</p>
+          <div class="dataGraph" id="0"></div>
+          <h4>$<span class="mon">00.00</span></h4>
+        </div>
+        <div class="dataIndividual"> 
+          <p>tue</p>
+          <div class="dataGraph" id="1"></div>
+          <h4>$<span class="tue">00.00</span></h4>
+        </div>
+        <div class="dataIndividual">
+          <p>wed</p>
+          <div class="dataGraph" id="2"></div>
+          <h4>$<span class="wed">00.00</span></h4>
+        </div>
+        <div class="dataIndividual">
+          <p>thu</p>
+          <div class="dataGraph" id="3"></div>
+          <h4>$<span class="thu">00.00</span></h4>
+        </div>
+        <div class="dataIndividual">
+          <p>fri</p>
+          <div class="dataGraph" id="4"></div>
+          <h4>$<span class="fri">00.00</span></h4>
+        </div>
+        <div class="dataIndividual">
+          <p>sat</p>
+          <div class="dataGraph" id="5"></div>
+          <h4>$<span class="sat">00.00</span></h4>
+        </div>
+        <div class="dataIndividual">
+          <p>sun</p>
+          <div class="dataGraph" id="6"></div>
+          <h4>$<span class="sun">00.00</span></h4>
+        </div>
+      </div>
+      <div class="separation"></div>
+      <div class="totalSpent">
+        <div class="thisMonth">
+          <p>Total this month</p>
+          <h1>$478.33</h1>
+        </div>
+        <div class="lastMonth">
+          <h5>+2.4%</h5>
+          <p>from last month</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
